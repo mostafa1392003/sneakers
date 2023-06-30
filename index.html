@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand logo pe-2" href="#">sneakers</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >collection</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+          <form class="d-flex formlogo" role="search">
+            <img src="icon-cart.svg" class="cartLogo" id="logo" /> 
+            <span class="counter">1</span>
+            <img src="image-avatar.png" class="avatar" />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <hr class="container" />
+    <div class="chared curdstyle">
+      <div class="titleChared">cart</div>
+      <hr class="container" />
+      <div class="craredBody">
+        <div class="card" style="width: 50%">
+          <img src="image-product-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text" id="cardtext"></p>
+          </div>
+        </div>
+        <div class="inspan"> Empty</div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          
+          <button class="btn btn-warning me-md-2 "id="buy" type="button">buy</button>
+          <button class="btn btn-dark" type="button" id="close">close</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="row main justify-content-evenly mt-2">
+      <div class="col-md-5 col-lg-4 col-sm-10 galary">
+        <div class="main-image row justify-content-center">
+          <img src="image-product-1.jpg" class="image-main col-11" />
+        </div>
+        <div class="contenarOfimages row justify-content-between mt-3">
+          <div class="side-image col-3" id="imgBtn1">
+            <img src=" image-product-1-thumbnail.jpg" alt="" />
+          </div>
+          <div class="side-image col-3" id="imgBtn2">
+            <img src=" image-product-2-thumbnail.jpg" alt="" />
+          </div>
+          <div class="side-image col-3" id="imgBtn3">
+            <img src=" image-product-3-thumbnail.jpg" alt="" />
+          </div>
+          <div class="side-image col-3" id="imgBtn4">
+            <img src=" image-product-4-thumbnail.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-lg-4 col-sm-10 snecars mt-3 mb-3 me-3 ms-3 data" >
+        <p class="title">sneakers company</p>
+        <p class="big-title">fall limited emition sneakers</p>
+        <p class="lorem">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+          suscipit, enim sit nemo quaerat fuga facilis necessitatibus facere a
+          itaque!
+        </p>
+        <div class="price"><span>$125.00</span><sup>50%</sup></div>
+        <small>$250.00</small>
+        <div class="sellButtons mt-4 d-flex justify-content-between">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic outlined example"
+          >
+            <button
+              type="button"
+              class="btn btn-outline-primary btnz"
+              id="plus"
+            >
+              -
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary btnz"
+              id="number"
+            >
+              0
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary btnz"
+              id="mins"
+            >
+              +
+            </button>
+          </div>
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg seelBtn"
+            id="btnseell"
+          >
+            <i class="fa-solid fa-cart-shopping"></i> Add to cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
